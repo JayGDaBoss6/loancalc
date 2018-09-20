@@ -23,41 +23,42 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">$</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Loan Amount" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" id="loanAmount" class="form-control" placeholder="Loan Amount" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">%</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Annual Interest" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" id="annualInterest" class="form-control" placeholder="Annual Interest" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Repayment Years" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="text" id="repaymentYears" class="form-control" placeholder="Repayment Years" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <button class=" btn btn-dark btn-block">Calculate</button>
+                    <button id="calculateBtn" class=" btn btn-dark btn-block">Calculate</button>
                 </div>
             </div>
             <div class="col-6 offset-3 text-center mb-5">
                 <div class="cont-cont bg-light px-5 pt-3">
+                    <h3>Results</h3>
                     <form>
                         <fieldset disabled>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Monthly Payment</span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" id="monthlyPaymentOutput" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Total Payment</span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" id="totalPaymentOutput" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Total Interest</span>
                                 </div>
-                                <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" id="totalInterestOutput" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                         </fieldset>
                 </div>
@@ -72,6 +73,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/trentrichardson/FinanceJs/master/finance.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
