@@ -14,11 +14,11 @@
 </head>
 
 <body>
-    <div style="height:100vh" class="container-fluid bg-dark ">
+    <div style="min-height:100vh" class="container-fluid bg-dark ">
         <div class="row">
             <div class="col-6 offset-3 text-center mt-5 ">
-                <div class="cont-cont bg-light px-5">
-                    <h1 class="my-3">Loan Calculator</h1>
+                <div class="cont-cont bg-light px-5 pb-5">
+                    <h1 class="py-3">Loan Calculator</h1>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">$</span>
@@ -34,11 +34,15 @@
                     <div class="input-group mb-3">
                         <input type="text" id="repaymentYears" class="form-control" placeholder="Repayment Years" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                    <button id="calculateBtn" class=" btn btn-dark btn-block">Calculate</button>
+                    <button id="calculateBtn" class="btn btn-dark btn-block">Calculate</button>
                 </div>
             </div>
-            <div class="col-6 offset-3 text-center mb-5">
-                <div class="cont-cont bg-light px-5 pt-3">
+            <div  class="col-6 offset-3 text-center mb-5 ">
+                <div id="gif" class="bg-light mb-5 pb-5 d-none">
+                    <h2>Calculating</h2>
+                    <img src="/icon.gif" alt="" class="img-fluid">   
+                </div>
+                <div id="calculated" class="bg-light px-5 d-none">
                     <h3>Results</h3>
                     <form>
                         <fieldset disabled>
